@@ -16,16 +16,28 @@
         </div>
         <div class="header_slider">
                 <div class="slider_item">
-                    <img src="img/slider/bg_2.jpg" alt="1">
+                    <picture>
+                        <source srcset="img/slider/webp/bg_2.webp" type="image/webp">
+                        <img src="img/slider/bg_2.jpg" alt="2">
+                    </picture>
                 </div>
                 <div class="slider_item">
-                    <img src="img/slider/bg_3.jpg" alt="4">
+                    <picture>
+                        <source srcset="img/slider/webp/bg_3.webp" type="image/webp">
+                        <img src="img/slider/bg_3.jpg" alt="3">
+                    </picture>
                 </div>
                 <div class="slider_item">
-                    <img src="img/slider/bg_4.jpg" alt="9">
+                    <picture>
+                        <source srcset="img/slider/webp/bg_4.webp" type="image/webp">
+                        <img src="img/slider/bg_4.jpg" alt="4">
+                    </picture>
                 </div>
                 <div class="slider_item">
-                    <img src="img/slider/bg_1.jpg" alt="9">
+                    <picture>
+                        <source srcset="img/slider/webp/bg_1.webp" type="image/webp">
+                        <img src="img/slider/bg_1.jpg" alt="1">
+                    </picture>
                 </div>
         </div>
         <div class="header_burger">
@@ -277,7 +289,14 @@
         <div class="popup_content">
             <a href="" class="popup_close close-popup">X</a>
             <div class="popup_title">Заказать звонок</div>
-            <div class="popup_text"></div>
+            <div class="popup_text">
+                <form action="">
+                    <input type="text" placeholder="Ваше Имя..." name="first_name">
+                    <input type="text" placeholder="Ваш город..." name="loc">
+                    <input type="text" placeholder="Ваш телефон..." name="tel">
+                    <input type="submit">
+                </form>
+            </div>
         </div>
     </div>
 </div>
