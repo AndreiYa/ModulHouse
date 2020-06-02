@@ -12,7 +12,6 @@ body.lock{
     overflow: hidden;
 }
 /* header */
-
 h1{
     font-size: 24px;
     font-weight: 400;
@@ -24,7 +23,6 @@ h1{
     right: 50%;
     transform: translate(50%, 0%); 
 }
-
 h1 span:before{
     position: absolute;
     content: '';
@@ -51,7 +49,6 @@ h1 span:after{
     color:#53d397;
 }
 /* header burger */
-
 .header_burger{
     display: block;
     position: absolute;
@@ -130,11 +127,10 @@ h1 span:after{
     height: 700px;
     width: 100%;
 }
-
 .header_slider img {
     width: 100%;
     height: 700px;
-  }
+}
 /* Лента слайдов */
 .header_slider .slick-track{
     display: flex;
@@ -144,14 +140,12 @@ h1 span:after{
 .header_slider .slick-slide{
     opacity: 0.4;
     overflow: hidden;
-
 }
 .header_slider .slick-slide:hover{
     opacity: 0.8;
     cursor: pointer;
     transition: all 0.5s ease 0s;
 }
-
 /* Слайд активный (показывается) */
 .slick-slide.slick-active{}
 /* Слайд основной */
@@ -171,7 +165,6 @@ h1 span:after{
 .header_slider .slick-dots li{
     list-style-type: none;
     margin: 0 10px;
-    
 }
 /* Элемент точки */
 .header_slider .slick-dots li button{
@@ -188,9 +181,7 @@ h1 span:after{
     background-color:#fff;
     border: 3px solid #53d397;
 }
-
 /* nav */
-
 .header_menu{
     opacity: 0;
     display: flex;
@@ -205,6 +196,76 @@ h1 span:after{
 .menu_bg{
     background: url('../img/slider/bg_2.jpg') center center/cover no-repeat;;
     width: 40%;
+}
+.header_menu .wrapper{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+} 
+.wave-btn{
+    width: 280px;
+    height: 60px;
+    display: flex;
+    border-radius: 0 0 10px 10px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s ease 0s;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+.wave-btn:hover{
+    border-radius: 10px;
+    transition: all 0.8s ease 0.2s;
+    box-shadow: 0 0 15px #53d39760;
+}
+.wave-btn:hover .wave-btn_waves{
+    top:-50px;
+}
+.wave-btn_text{
+    font-family: Arial, sans-serif;
+    color: #fff;
+    letter-spacing: 8px;
+    position: relative;
+    z-index: 1;
+}
+.wave-btn_waves{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 280px;
+    background-color: #4cb484;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0 , 0.5);
+    transition: all 0.9s ease 0s;
+}
+.wave-btn_waves:after,
+.wave-btn_waves:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 250%;
+    height: 250%;
+    transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+}
+.wave-btn_waves:before{
+    background-color: #1b212c;
+    border-radius: 48%;
+    animation: waves 5s infinite linear;
+}
+.wave-btn_waves:after{
+    background-color: #1b212c60;
+    border-radius: 44%;
+    animation: waves 10s infinite linear;
+}
+@keyframes waves {
+    0%{
+        transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+    }
+    100%{
+        transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1);
+    }
 }
 .header_menu ul{
     position: relative;
@@ -236,7 +297,9 @@ h1 span:after{
     border-bottom: 1px solid #53d397;
     border-left: 1px solid #53d397;
 }
-
+.header_link_logo:before{
+    display: none;
+}
 .header_menu ul li .logo{
     font-size: 24px;
     font-weight: 400;
@@ -348,8 +411,6 @@ li .flaticon-house-plans:before{
     font-size: 26px;
     margin-right: 16px;
 }
-
-
 .service_nav h3 span{
     color: #fff;
     padding-bottom: 3px;
@@ -390,7 +451,6 @@ li .flaticon-house-plans:before{
 .accord_btn a:hover{
     color: #4a5562;
 }
-
 .img_15{
     height: 100%;
     width: 100%;
@@ -399,7 +459,6 @@ li .flaticon-house-plans:before{
     max-height: 60%;
     max-width: 60%;
 }
-/*  */
 /* started */
 .started_container{
     display: flex;
@@ -429,8 +488,17 @@ li .flaticon-house-plans:before{
     vertical-align: middle;
     font-size: 16px;
 }
+.started_btn a{
+    text-decoration: none;
+    color:#1b212c;
+}
+.started_btn:hover{
+    background-color: transparent;
+}
+.started_btn:hover a{
+    color: #fff;
+}
 /* portfolio */
-
 .main_porfolio_wrapper{
     display: flex;
     justify-content: space-between;
@@ -531,10 +599,8 @@ li .flaticon-house-plans:before{
 }
 .reviews_left_btn {
     margin-top: 40px;
-    
     background: #fff;
     border: 1px solid #fff;
-    color: #1b212c;
     padding: 24px;
     font-weight: 400;
     text-align: center;
@@ -543,14 +609,12 @@ li .flaticon-house-plans:before{
     font-size: 16px;
     cursor: pointer;
 }
-
 .reviews_left_btn a{
     text-decoration: none;
-
+    color: #1b212c;
 }
-.reviews_left_btn a:hover{
+.reviews_left_btn:hover a{
     color: #fff;
-
 }
 .reviews_left_btn:hover{
     background: transparent;
@@ -612,8 +676,6 @@ li .flaticon-house-plans:before{
 .reviews_slider .slick-slide{
     overflow: hidden;
 }
-
-
 /* Слайд активный (показывается) */
 .slick-slide.slick-active{}
 /* Слайд основной */
@@ -664,6 +726,7 @@ li .flaticon-house-plans:before{
 .price_item{
     text-align: center;
     padding: 48px 24px;
+    flex: 0 0 33.3%;
 }
 .price_title{
     font-weight: 400;
@@ -823,7 +886,6 @@ li .flaticon-house-plans:before{
 .about_reviews .reviews_slider .slick-dots{
     bottom: 15px;
 }
-
 /* our team */
 .our_team{
     padding: 119px 0;
@@ -996,7 +1058,6 @@ form textarea{
     line-height: 1.8;
     font-weight: 400;
     color: #798899;
-
 }
 .grid {
     list-style: none;
@@ -1010,21 +1071,17 @@ form textarea{
     padding-left: 40px;
     vertical-align: top;
   }
-  
   .gc--1-of-3 {
     width: 43%;
   }
-  
   .gc--2-of-3 {
     width: 57%;
   }
-  
   .naccs {
     position: relative;
     max-width: 950px;
     margin: 0 auto;
   }
-  
   .naccs .menu div {
     padding: 15px 0 15px 20px;
     margin-bottom: 10px;
@@ -1103,10 +1160,10 @@ form textarea{
         padding: 30px 10px;
     }
     .popup_content{
-        background-color: #fff;
+        background-color: #4a5562;
         color: #000;
         max-width: 800px;
-        padding: 30px;
+        padding: 30px 80px;
         margin-bottom: 15px;
         position: relative;
         transition: all 0.8s ease 0s;
@@ -1115,15 +1172,53 @@ form textarea{
     }
     .popup_close{
         position: absolute;
-        right: 10px;
+        right: 15px;
         top: 10px;
-        font-size: 18px;
-        color: #000;
+        font-size: 20px;
+        color: #fff;
         text-decoration: none;
     }
     .popup_title{
-        font-size: 30px;
+        font-size: 26px;
+        color:#fff;
+        margin-bottom: 30px;
+        text-align: center;
     }
+    .popup input {
+        background-color: rgba(216, 216, 216, 0.849);
+    }
+/* blog */
+.content_wrapper{
+    display: flex;
+    justify-content: flex-start;
+}
+.content{
+    padding: 15px;
+    flex: 0 0 70%;
+}
+.content h2{
+    color: #1b212c;
+}
+.content h2, p{
+    margin-bottom: 20px;
+}
+.content p{
+    margin-top: 20px;
+    color: #798899;
+}
+.side_menu{
+    padding: 15px;
+}
+.side_menu h3{
+    margin-top: 30px;
+}
+.side_menu ul{
+    list-style-type: none;
+    padding: 15px 0px 15px 10px;
+}
+.side_menu ul li{
+    padding: 10px 0;
+}
 @media (max-width: 550px){
     .img_portfolio_wrapper img:nth-child(2),
     .img_portfolio_wrapper img:nth-child(3),
@@ -1137,7 +1232,6 @@ form textarea{
         overflow: hidden;
     }
 }
-
   @media (max-width: 1125px){
     .content_item{
         flex-wrap: wrap;
@@ -1200,7 +1294,6 @@ h1 span:after{
     width: 12px;
 }
 .menu_bg{
-   
     width: 0;
 }
 .header_menu ul{
