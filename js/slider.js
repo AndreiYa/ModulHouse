@@ -13,4 +13,12 @@ $('.reviews_slider').slick({
   autoplaySpeed: 4000,
   dots: true,
   arrows: false,
+  responsive: [
+    {
+      breakpoint: 720,
+      settings: "unslick",
+      slidesToShow: 1,
+      arrows: false,
+    }
+  ]
 });
