@@ -499,6 +499,12 @@ li .flaticon-house-plans:before{
 .portfolio_wrapper img{
     width:95%;
     height:auto;
+    opacity: 0.8;
+}
+.portfolio_wrapper img:hover{
+    width: 99.5%;
+    opacity: 1;
+    transition: all 0.3s ease 0s;
 }
 .porfolio_content_wrapper{
     display: block;
@@ -513,6 +519,12 @@ li .flaticon-house-plans:before{
 }
 .img_portfolio_wrapper img{
     width: 100%;
+    opacity: 0.8;
+}
+.img_portfolio_wrapper img:hover{
+    width: 99.5%;
+    opacity: 1;
+    transition: all 0.3s ease 0s;
 }
 .img_portfolio_wrapper img:nth-child(2),
 .img_portfolio_wrapper img:nth-child(3),
