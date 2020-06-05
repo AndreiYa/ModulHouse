@@ -359,6 +359,7 @@ h1 span:after{
     padding: 20px 30px;
     background: #fff;
     border: 2px solid #fff;
+    white-space: nowrap;
    
 }
 .content_btn:hover{
@@ -502,7 +503,6 @@ li .flaticon-house-plans:before{
     opacity: 0.8;
 }
 .portfolio_wrapper img:hover{
-    width: 94.5%;
     opacity: 1;
     transition: all 0.3s ease 0s;
 }
@@ -522,7 +522,6 @@ li .flaticon-house-plans:before{
     opacity: 0.8;
 }
 .img_portfolio_wrapper img:hover{
-    width: 99.5%;
     opacity: 1;
     transition: all 0.3s ease 0s;
 }
@@ -1223,6 +1222,10 @@ form textarea{
 .side_menu ul li{
     padding: 10px 0;
 }
+.side_menu a{
+    text-decoration: none;
+    color:#1b212c;
+}
 @media (max-width: 550px){
     .img_portfolio_wrapper img:nth-child(2),
     .img_portfolio_wrapper img:nth-child(3),
@@ -1366,7 +1369,17 @@ h1 span:after{
     .work_item{
         margin-top: 20px;
         flex: 0 0 100%;
-}
+    }
+    .content_blog_wrapper{
+        flex-wrap: wrap;
+    }
+    .content_blog{
+        flex: 0 1 100%;
+        order: 1;
+    }
+    .tag_cloud{
+        display: none;
+    }
 }
 @media (max-width: 503px){
     .wrapper .content_img_wrapper img{
